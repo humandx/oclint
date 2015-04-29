@@ -5,11 +5,10 @@
 class SpaceBeforeOpenCurlyBraceRuleTest : public ::testing::Test {
 };
 
-
 TEST_F(SpaceBeforeOpenCurlyBraceRuleTest, PropertyTest)
 {
     SpaceBeforeOpenCurlyBraceRule rule;
-    EXPECT_EQ(2, rule.priority());
+    EXPECT_EQ(3, rule.priority());
     EXPECT_EQ("space before open curly brace", rule.name());
 }
 

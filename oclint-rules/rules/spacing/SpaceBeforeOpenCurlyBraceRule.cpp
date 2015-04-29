@@ -15,7 +15,7 @@ public:
 
     virtual int priority() const override
     {
-        return 2;
+        return 3;
     }
 
     virtual void eachLine(int lineNumber, string line) override

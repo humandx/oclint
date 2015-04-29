@@ -15,3 +15,15 @@ It looks for potential problems that aren't visible to compilers, for example:
 * ...
 
 For more information, visit http://oclint.org
+
+
+Setup
+-----
+
+cd ../oclint-scripts
+./make
+
+While this is running, modify your ~/.bashrc to include the following lines:
+
+OCLINT_HOME=~/Software/code_utils/oclint/build/
+export PATH=$OCLINT_HOME/bin:$PATH

@@ -1,2 +1,4 @@
 
 BUILD_TEST(SpaceBeforeOpenCurlyBraceRuleTest)
+
+BUILD_TEST(NoTrailingWhiteSpaceRuleTest)
