@@ -20,7 +20,7 @@ TEST_F(SpaceBeforeOpenCurlyBraceRuleTest, GoodMethod)
 TEST_F(SpaceBeforeOpenCurlyBraceRuleTest, ViolationForBadMethod)
 {
     testRuleOnCode(new SpaceBeforeOpenCurlyBraceRule(), "void m(){\n  \n}",
-        0, 1, 1, 1, 9, "{ must have exactly one space preceding it.");
+        0, 1, 1, 1, 9, "{ must have exactly one space preceding it, unless ^{ or @{.");
 }
 
 TEST_F(SpaceBeforeOpenCurlyBraceRuleTest, ViolationForLoneCurly)

@@ -21,7 +21,7 @@ public:
 
     virtual void eachLine(int lineNumber, string line) override
     {
-        int threshold = RuleConfiguration::intForKey("LONG_LINE", 100);
+        int threshold = RuleConfiguration::intForKey("LONG_LINE", 300);
         int currentLineSize = line.size();
         if (currentLineSize > threshold)
         {

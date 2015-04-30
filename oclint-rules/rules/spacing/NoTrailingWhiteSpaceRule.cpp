@@ -22,7 +22,7 @@ public:
         int currentLineSize = line.size();
         string description;
         description = "No trailing whitespace is allowed.";
-        if (isspace(line.at(currentLineSize - 1))) {
+        if (currentLineSize > 0 && isspace(line.at(currentLineSize - 1))) {
             addViolation(lineNumber, 1, lineNumber, currentLineSize, this, description);
         }
 

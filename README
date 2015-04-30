@@ -17,13 +17,36 @@ It looks for potential problems that aren't visible to compilers, for example:
 For more information, visit http://oclint.org
 
 
+Preliminaries
+-------------
+
+In order to build, please install the dependencies linked [here](http://docs.oclint.org/en/dev/intro/build.html):
+
+- LLVM System Requirements
+- Python
+- Git
+- Apache Subversion
+- CMake
+
 Setup
 -----
 
-cd ../oclint-scripts
+cd oclint-scripts
 ./make
 
-While this is running, modify your ~/.bashrc to include the following lines:
+While this is running (it'll take ~15 minutes), modify your ~/.bashrc to include the following lines:
 
-OCLINT_HOME=~/Software/code_utils/oclint/build/
-export PATH=$OCLINT_HOME/bin:$PATH
+OCLINT_HOME=~/[path_to_oclint_folder]/build/bin
+export PATH=$OCLINT_HOME:$PATH
+
+
+Using within Xcode
+------------------
+Once oclint has finished sucessfully making, simply choose "OCLint" as a build target and click the "Build and Run" arrow. The OCLint build script which will be running should report xcodebuild errors/warnings as well as OCLint-specific warnings.
+
+Rebuilding the rules
+--------------------
+This is less time consuming than making the whole project, and should be done if there are updates to the OCLint rules.
+
+cd oclint-scripts
+./build
