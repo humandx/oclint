@@ -20,7 +20,7 @@ For more information, visit http://oclint.org
 Preliminaries
 -------------
 
-In order to build, please install the dependencies linked [here](http://docs.oclint.org/en/dev/intro/build.html):
+In order to build, please install the dependencies here: http://docs.oclint.org/en/dev/intro/build.html
 
 - LLVM System Requirements
 - Python
